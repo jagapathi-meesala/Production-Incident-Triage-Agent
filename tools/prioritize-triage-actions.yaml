@@ -1,0 +1,21 @@
+name: prioritize-triage-actions
+description: Prioritize proposed triage actions using supplied urgency and reversibility information.
+input_schema:
+  type: object
+  properties:
+    actions:
+      type: array
+      items:
+        type: object
+        properties:
+          action:
+            type: string
+          priority:
+            type: string
+          reversible:
+            type: boolean
+        required:
+          - action
+      description: Candidate actions from approved runbooks or the incident team.
+  required:
+    - actions

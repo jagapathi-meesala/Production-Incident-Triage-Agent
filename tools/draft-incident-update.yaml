@@ -1,0 +1,17 @@
+name: draft-incident-update
+description: Draft a human-reviewable incident status update from supplied facts.
+input_schema:
+  type: object
+  properties:
+    confirmed_facts:
+      type: string
+    known_impact:
+      type: string
+    current_status:
+      type: string
+    next_steps:
+      type: string
+    audience:
+      type: string
+  required:
+    - confirmed_facts

@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: production-incident-triage-agent
+version: "1.0.0"
+description: Helps organize incident evidence, assess impact, and draft safe triage and communication plans.
+author: jagapathi-meesala
+license: MIT
+skills:
+  - incident-assessment
+  - evidence-correlation
+  - mitigation-planning
+tools:
+  - summarize-incident
+  - prioritize-triage-actions
+  - draft-incident-update
+runtime:
+  max_turns: 5
+  temperature: 0.2
+  timeout: 30
+tags:
+  - production
+  - incident-response
+  - reliability

@@ -1,0 +1,19 @@
+name: summarize-incident
+description: Structure supplied incident information into facts, timeline, evidence, hypotheses, and unknowns.
+input_schema:
+  type: object
+  properties:
+    description:
+      type: string
+      description: Incident symptoms and observed behavior.
+    impact:
+      type: string
+      description: Known user or service impact.
+    timeline:
+      type: string
+      description: Supplied incident events and timestamps.
+    evidence:
+      type: string
+      description: Redacted logs, metrics, or other evidence excerpts.
+  required:
+    - description
